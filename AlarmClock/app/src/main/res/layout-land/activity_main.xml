@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:id="@+id/main_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/titleImage"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/newAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:onClick="onClick"
+            android:background="@null"
+            android:src="@drawable/newalarmbutton"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/titleImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/changeSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+            android:onClick="onClick"
+            android:background="@null"
+            android:src="@drawable/settingsbutton"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.17"
+            android:layout_below="@+id/titleImage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical" >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="271dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/previousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+            android:onClick="onClick"
+            android:background="@null"
+            android:src="@drawable/leftarrow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:onClick="onClick"
+            android:background="@null"
+            android:src="@drawable/rightarrow"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/currentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Date"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="5dip"
+        android:orientation="vertical" >
+
+        <ListView android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@drawable/line"
+            android:dividerHeight="3dip"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="#00000000"
+            android:drawSelectorOnTop="false" />
+
+        <TextView android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#777777" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AlarmClock</string>
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all">Delete All</string>
+
+</resources>

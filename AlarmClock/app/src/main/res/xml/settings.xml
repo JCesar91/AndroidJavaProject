@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Change Alarm Sound">
+
+        <RingtonePreference android:key="ringtone_pref"
+            android:title="Set Alarm Sound"
+            android:summary="Phone Ringtone"
+            android:ringtoneType="all"
+            android:showDefault="true"
+            android:showSilent="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Vibration">
+
+    <CheckBoxPreference android:key="vibrate_pref"
+        android:title="Vibrate"
+        android:summary="Vibrate with Alarm"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="System Sound">
+
+        <CheckBoxPreference android:key="sound_pref"
+            android:title="Menu Sounds"
+            android:summary="Sound"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
